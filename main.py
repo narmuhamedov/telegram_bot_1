@@ -4,7 +4,7 @@ from bot_istance import dp
 from handlers import client, call_back, extra, fsmadmin, notification
 from database import bot_db
 from handlers.notification import schleuder
-
+#
 async def on_startup(_):
     bot_db.sql_create()
     asyncio.create_task(schleuder())
